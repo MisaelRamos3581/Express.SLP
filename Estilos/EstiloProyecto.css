@@ -1,0 +1,124 @@
+body
+{
+  margin: 0 auto;
+  height: 700px;
+  width: 1300px;
+  background: rgba(32,124,229,1);
+  background: -moz-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,124,229,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(32,124,229,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#000000', GradientType=0 );
+}
+#baner
+{
+  height: 125px;
+  width: 1300px;
+  background: url("../imagenes/baner4.jpg");
+  float: left;
+}
+#menu
+{
+  height: 50px;
+  width: 1300px;
+  /*background: red;*/
+  float: left;
+}
+ul#menu
+{
+  text-align: center;
+  padding: 0;
+}
+ul#menu li
+{
+  display: inline;
+}
+ul#menu li a
+{
+  background: #04FB9A;
+  color: #5F08CD;
+  padding: 15px 50px;
+  text-decoration: none;
+  border-radius: 10px 10px 0px 0px;
+}
+ul#menu li a:hover
+{
+  background: #ec3914;
+
+}
+#contenido
+{
+  height: 450px;
+  width: 1300px;
+  /*background: green;*/
+  float: left;
+}
+#pie_pag
+{
+height: 75px;
+width: 1300px;
+background: navy;
+float: left;
+}
+#izquierda
+{
+  height: 75px;
+  width: 650px;
+  background: navy;
+  float: left;
+}
+#derecha
+{
+  height: 75px;
+  width: 650px;
+  background: navy;
+  float: left;
+}
+img.contenido
+{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.slider{
+  width: 60%;
+  overflow: hidden;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.slider ul
+{
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 15s infinite alternate;
+}
+.slider ul:hover
+{
+  animation-play-state:paused;
+  cursor: pointer;
+}
+.slider li
+{
+  width: 100%;
+  list-style: none;
+}
+.slider img
+{
+  width: 100%;
+  height: 350px;
+}
+@keyframes cambio {
+    0%{ margin-left: 0px;}
+    20%{ margin-left: 0px;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
